@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: darkorange; */
+    background-color: #212121;
+    display: block;
+    height:100vh;
+    /* overflow: scroll;
+    scrollbar-color: black;
+    scrollbar-width: thin; */
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: #000000bb; */
+    background-color: #212121;
+    color: white;
+    align-items: center;
+    justify-content:space-around;
+    min-height: 50px;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+}
+/* #info{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+} */
+@media screen and (max-width:991px) and (orientation:landscape){
+    .navbar{
+        flex-direction: row;
+        min-height: 100px;
+        align-items: center;
+        justify-content: flex-end;
+        position: fixed;
+    }
+}
+@media screen and (max-width:767px) , (orientation:portrait) {
+    .navbar{
+        flex-direction: column;
+        min-height: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        display: none;
+    }
+    a , h3{
+        border: 1px solid white;
+        width: 100vw;
+        text-align: center;
+    }
+    #info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+a:hover{
+    color:white;
+    text-decoration: underline;
+}
+a:visited{
+    color:white;
+}
+a:active{
+    color:white;
+    text-decoration: underline;
+}
+a:focus{
+    color:white;
+}
+a{
+    text-decoration: none;
+}
+button{
+    padding:10px 5px;
+    border-radius: 5px;
+}
+.container{
+    display: flex;
+    flex-direction:row;
+}
+.box{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.icon-i{
+    color:white;
+}
+#foot{
+    color:red;
+    width:400px;
+    margin:30px auto;
+}
+.parent{
+    display: grid;
+    width:90vw;
+    height:200px;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr 10fr;
+    background-color: #242424;
+    border: 2px solid #242424;
+    color: white;
+    margin: 20px auto;
+    z-index:1;
+    row-gap:5px;
+    /* position: fixed; */
+    /* top:700px; */
+    /* left:90px; */
+    overflow:scroll;
+    scrollbar-width: thin;
+    scrollbar-color:white black;
+}
+#details-0{
+    font-size: 40px;
+    padding: 10px;
+}
+#details-1{
+    font-size: 22px;
+    padding: 10px;
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
